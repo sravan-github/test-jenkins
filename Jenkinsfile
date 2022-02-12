@@ -10,7 +10,7 @@ pipeline {
                     pwd
                     ls -ltr
                     ansible --version
-                    anisble-playbook shell.yml
+                    ansible-playbook shell.yml
                     '''
                 }
            }
