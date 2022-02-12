@@ -6,7 +6,7 @@ pipeline {
                 sh '''
                     #!/bin/bash
                     git clone https://github.com/sravan-github/test-jenkins.git
-                    cd toolkit
+                    cd test-jenkins
                     pwd
                     ls -ltr
                     ansible --version
