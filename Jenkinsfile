@@ -1,20 +1,15 @@
 pipeline {
     agent {
-     docker { image 'ansible/ansible' }
+        docker { image 'node:16.13.1-alpine' }
     }
     stages {
-        stage('Cloning Git') {
+        stage('Test') {
             steps {
-                sh '''
-                    #!/bin/bash
-                    #git clone https://github.com/sravan-github/toolkit.git
-                    pwd
-                    ls -ltr
-                    ansible --version
-                    '''
-                }
-           }
+                sh 'node --version'
+            }
         }
+    }
+}
         post {
         always {
             cleanWs deleteDirs: true
