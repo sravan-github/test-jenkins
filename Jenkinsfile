@@ -1,13 +1,13 @@
 pipeline {
-    agent any 
+    agent {
+     docker { image 'ansible' }
+        agent {
     stages {
         stage('Cloning Git') {
             steps {
                 sh '''
                     #!/bin/bash
-                    git clone https://github.com/sravan-github/toolkit.git
-                    pwd
-                    cd toolkit
+                    #git clone https://github.com/sravan-github/toolkit.git
                     pwd
                     ls -ltr
                     ansible --version
