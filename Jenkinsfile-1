@@ -1,11 +1,11 @@
 pipeline {
     agent {
-        docker { image 'sravangcpdocker/toolkit:2' }
+        docker { image 'sravangcpdocker/toolkit:7' }
     }
     stages {
         stage('Test') {
             steps {
-                sh 'mvn --version'
+                sh 'terraform --version'
             }
         }
     }
