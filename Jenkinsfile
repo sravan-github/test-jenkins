@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh '''
                     #!/bin/bash
-                    git clone https://github.com/sravan-github/toolkit.git
+                    https://github.com/sravan-github/test-jenkins.git
                     cd toolkit
                     pwd
                     ls -ltr
