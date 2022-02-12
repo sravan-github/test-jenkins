@@ -1,7 +1,7 @@
 pipeline {
     agent {
      docker { image 'ansible' }
-        agent {
+    }
     stages {
         stage('Cloning Git') {
             steps {
