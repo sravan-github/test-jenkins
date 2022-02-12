@@ -1,11 +1,11 @@
 pipeline {
     agent {
-        docker { image 'sravangcpdocker/toolbox' }
+        docker { image 'ubuntu:18.04' }
     }
     stages {
         stage('Test') {
             steps {
-                sh 'node --version'
+                sh 'pwd'
             }
         }
     }
