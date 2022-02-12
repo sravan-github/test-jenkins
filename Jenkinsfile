@@ -7,9 +7,6 @@ pipeline {
                     #!/bin/bash
                     git clone https://github.com/sravan-github/test-jenkins.git
                     cd test-jenkins
-                    pwd
-                    ls -ltr
-                    ansible --version
                     ansible-playbook shell.yml
                     '''
                 }
