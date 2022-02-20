@@ -13,6 +13,7 @@ pipeline {
                     git clone https://github.com/sravan-github/test-jenkins.git
                     cd test-jenkins
                     ansible-playbook shell.yml
+                    cat /etc/ansible/ansible.cfg
                     '''
                 }
            }
